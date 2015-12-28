@@ -4,8 +4,11 @@ import java.io.IOException;
 
 import gui.PokedeckGUI;
 
+
 public class MainClass {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
+		
+		Card.deserialize();
 		
 		Player trainer = new Player("Sasha");
 		Energy feu = new Energy("Feu", "feu", 1);
